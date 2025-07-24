@@ -1,0 +1,91 @@
+.about-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 2rem;
+  background-color: #0f1117;
+  color: #ffffff;
+  gap: 2.5rem; /* adds space between image and text */
+  flex-wrap: wrap;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center top; /* focuses on the top part of the image (your face) */
+  border-radius: 50%;
+  border: 4px solid #13bb56;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.section-title {
+background: linear-gradient(90deg, #13bb56, #0080ff); /* same as "Pratham Langaliya" */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.tech-stack-section {
+  padding: 3rem 2rem;
+ background-color: #0f1117;
+  color: #000000;
+  height: 290px;
+  padding-bottom: 50px;
+}
+
+.tech-stack-title {
+  background: linear-gradient(90deg, #13bb56, #0080ff); /* same as "Pratham Langaliya" */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.tech-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.tech-stack-item {
+  background-color: #f0f0f021;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.tech-stack-item:hover {
+  transform: scale(1.05);
+  background-color: #696969;
+}
+

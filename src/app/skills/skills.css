@@ -1,0 +1,107 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #0f1117;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+section{
+  margin-top: 0px;
+}
+
+
+
+/* Section container */
+#skills {
+  background-color: #0f1117;
+  min-height: 100vh;
+  text-align: center;
+  padding: 60px 20px;
+
+}
+
+/* Title styling */
+.skills-title {
+ background: linear-gradient(90deg, #00ff66, #155a9e); /* same as "Pratham Langaliya" */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 70px;
+  padding-top: 50px;
+  position: relative;
+  top: 200px;
+}
+
+.skills-title span {
+  color: #3498db;
+  
+}
+
+/* Skills grid */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 200px;
+}
+
+/* Individual skill card */
+.skill {
+  background: linear-gradient(145deg, #1a1c23, #0d0e12);
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  animation: float 3s ease-in-out infinite;
+}
+
+.skill:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(27, 192, 40, 0.3);
+}
+
+.skill img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 2px #3da5f4);
+}
+
+/* Floating animation for a modern feel */
+/* @keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+} */
+/* @media (max-width: 600px) {
+  .skill {
+    width: 80px;
+    height: 80px;
+  }
+   .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+} */
+
+@media (max-width: 600px) {
+
+  .skill{
+    margin-bottom: 10px;
+  }
+}
+
+

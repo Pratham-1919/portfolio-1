@@ -1,0 +1,149 @@
+.projects-section {
+  background-color: #0f1117;
+  padding: 40px 20px;
+  color: #fff;
+}
+body{
+  margin: 0;
+  overflow-x: hidden;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.section-title {
+ background: linear-gradient(90deg, #00ff66, #155a9e); /* same as "Pratham Langaliya" */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.project-cards {
+display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 20px;
+  gap: 1rem;
+  position: relative;
+  right: 50px;
+  justify-content: center;
+}
+.projectclass{
+    margin-right: 40px;
+    gap: 70px;
+    width: 100%;
+    margin-left: 50px;
+}
+
+.project-card {
+   flex: 1 1 calc(25% - 24px);
+ width: 22%;
+ min-width: 250px;
+  background-color: #161b22;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: #b0b3b8;
+  margin-bottom: 12px;
+}
+
+.tags {
+  margin-bottom: 16px;
+}
+
+.tags span {
+  background-color: #2a2e35;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+  flex: 1;
+  text-align: center;
+}
+
+.live-demo {
+  background-color: #1f71eb4d;
+  color: #fff;
+}
+
+.live-demo:hover {
+  background-color: #388bfd;
+}
+
+.code {
+  background-color: #2ea04363;
+  color: #fff;
+}
+
+.code:hover {
+  background-color: #3fb950;
+}
+@media (max-width: 1024px) {
+  .project-card {
+   width: 45%;/* 2 cards per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    flex: 1 1 100%; /* 1 card per row on phones */
+  }
+}
+
+
+  
+  @media (max-width: 768px) {
+
+    .project-card{
+      width: 90%;
+    }
+  }
+
